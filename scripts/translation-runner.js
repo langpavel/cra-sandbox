@@ -2,7 +2,7 @@
 const manageTranslations = require('react-intl-translations-manager').default;
 
 manageTranslations({
-  messagesDirectory: '../messages',
+  messagesDirectory: 'src/locale/.extracted',
   translationsDirectory: 'src/locale/',
   // en is defaultLocale so no need to list en here
   languages: ['cs'],

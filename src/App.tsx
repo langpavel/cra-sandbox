@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import { FormattedMessage } from 'react-intl.macro';
 import './App.css';
 
 const App: React.FC = () => {
@@ -14,13 +15,12 @@ const App: React.FC = () => {
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          rel="noopener noreferrer">
+          <FormattedMessage id="App.learnReact" defaultMessage="Learn React" />
         </a>
       </header>
     </div>
   );
-}
+};
 
 export default App;
