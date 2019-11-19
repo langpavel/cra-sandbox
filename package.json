@@ -9,11 +9,15 @@
     "@types/react-dom": "16.9.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-intl": "^3.6.0",
+    "react-intl.macro": "^0.3.7",
     "react-scripts": "3.2.0",
     "typescript": "3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "intl.extract": "MESSAGE_DIR='./.messages' react-scripts build",
+    "intl.manageTranslations": "node ./scripts/translation-runner.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,6 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-intl-translations-manager": "^5.0.3"
   }
 }
 
